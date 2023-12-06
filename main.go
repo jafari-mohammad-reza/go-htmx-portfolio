@@ -19,6 +19,7 @@ func main() {
 			"Title": "Htmx Echo practice.",
 		})
 	})
-	cfg := pkg.SetupConfig()
-	e.Logger.Fatal(e.Start(fmt.Sprintf(":%d", cfg.Port)))
+	pkg.SetupConfigs()
+	privateConfig, _ := pkg.GetConfigs()
+	e.Logger.Fatal(e.Start(fmt.Sprintf(":%d", privateConfig.Port)))
 }
