@@ -1,0 +1,102 @@
+nav_bar:
+  render: true
+  type: link
+  location: center # can be "left" or "right"
+
+about_me:
+  text: true
+  image: true
+
+skills:
+  render: true
+  type: text_icon # can be "percent" or "progress_bar"
+  rounded_image: true
+
+experiences:
+  render: true
+  company_name:
+    render: true
+    linkedin: https://linkedin.com/compay_name
+  years:
+    render: true
+    type: months # can be "days" or "years"
+  position: true
+  duties:
+    render: true
+    type: "list" # can be "description"
+  used_skills: true
+
+projects:
+  render: true
+  github_links: true
+  preview_links: true
+  descriotion: true
+  style: text_with_image # can be "text_only"
+
+blogs:
+  render: true
+  link: true
+  over_view: true
+  image: true
+
+contact_me:
+  redner: true
+  phone_number:
+    redner: true
+    number: "09123456789"
+  email_address:
+    redner: true
+    email_input:
+      render: true
+      type: "input" # can be "link" to emailing apps
+    email: "mohammadrezajafari.dev@gmail.com"
+
+social_medias:
+  render: true
+  github:
+    stats:
+    render: true
+      total_contributes: true
+      total_stars: true
+      acchivements: true
+      followers: true
+    username: "jafari-mohammad-reza"
+  linkedin:
+    render: true
+    stats:
+      job_status: true
+      connections_number: true
+      posts_number: true
+    username: "mohammadreza-jafari"
+  telegram:
+    render: true
+    username: "DaYeezus"
+  instagram:
+    reunder: false # cause i dont have instagram i dont put it but you can
+    username: ""
+  reddit:
+    render: true
+    username: ""
+education:
+  render: true
+  schools:
+    - name: "Payam Nour university"
+      degree: "Bachelor of computer engeeniring"
+      years: "2021 - 2024"
+      description: "Specialized in software development and data structures."
+
+hobbies:
+  render: true
+  list:
+    - "Video games"
+    - "Music"
+    - "Anime & series"
+    - "reading self improvement,motivational or even fiction books"
+interests:
+  render: true
+  list:
+    - "Open source project"
+    - "Software Design"
+    - "DataBase Design"
+    - "DevOps"
+    - "Linux"

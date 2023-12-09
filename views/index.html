@@ -1,32 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mohammadreza Jafari Portfolio</title>
     <script src="https://unpkg.com/htmx.org@1.9.9"></script>
-    <link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira Code"
+      rel="stylesheet"
+    />
     <script src="/public/js/script.js"></script>
     <style type="text/tailwindcss">
-        @layer utilities {
-            body {
-                @apply bg-blue-500
-            }
+      @layer utilities {
+        body {
+          @apply bg-blue-500;
         }
+      }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/public/css/style.css">
-</head>
-<body>
-<h1>
-    <div id="about"></div>
-    {{.Title}}
-</h1>
+    <link rel="stylesheet" href="/public/css/style.css" />
+  </head>
+  <body>
+    <h1>
+      <div id="about"></div>
+      {{.Title}}
+    </h1>
 
-<script>
-    loadHTML('about.html', 'about');
-</script>
-</body>
+    <script>
+      loadHTML("about.html", "about");
+    </script>
+  </body>
 </html>

@@ -1,9 +1,10 @@
 package pkg
 
 import (
-	"github.com/labstack/echo/v4"
 	"io"
 	"text/template"
+
+	"github.com/labstack/echo/v4"
 )
 
 type Template struct {
